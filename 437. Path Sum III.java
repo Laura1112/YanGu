@@ -1,8 +1,8 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-//ÌâÒâ£ºÔÚ¶ş²æÊ÷ÉÏ²éÕÒºÍÎªsumµÄÂ·¾¶ÓĞ¶àÉÙÌõ£¬²»Ö¸¶¨ÆğÊ¼Î»ÖÃºÍÖÕÖ¹Î»ÖÃ£¬Ö»ÒªÇó´ÓÉÏµ½ÏÂ
-//Ë«²ãµİ¹é£¬Ò»¸öµİ¹é±éÀú½Úµã£¬±íÊ¾´Ó¸Ã½Úµã¿ªÊ¼µÄÓĞĞ§Â·¾¶£¬Ò»¸ö±éÀú¸Ã½ÚµãÒ»ÏÂµÄ½ÚµãÊÇ·ñÄÜ¹¹³ÉÒ»ÌõÓĞĞ§µÄÂ·
+//é¢˜æ„ï¼šåœ¨äºŒå‰æ ‘ä¸ŠæŸ¥æ‰¾å’Œä¸ºsumçš„è·¯å¾„æœ‰å¤šå°‘æ¡ï¼Œä¸æŒ‡å®šèµ·å§‹ä½ç½®å’Œç»ˆæ­¢ä½ç½®ï¼Œåªè¦æ±‚ä»ä¸Šåˆ°ä¸‹
+//åŒå±‚é€’å½’ï¼Œä¸€ä¸ªé€’å½’éå†èŠ‚ç‚¹ï¼Œè¡¨ç¤ºä»è¯¥èŠ‚ç‚¹å¼€å§‹çš„æœ‰æ•ˆè·¯å¾„ï¼Œä¸€ä¸ªéå†è¯¥èŠ‚ç‚¹ä¸€ä¸‹çš„èŠ‚ç‚¹æ˜¯å¦èƒ½æ„æˆä¸€æ¡æœ‰æ•ˆçš„è·¯
 //int rst = pathSum(root.left,sum)+pathSum(root.right,sum)+presentSum(root,sum);
 //rst += presentSum(root.left,sum-root.val)+presentSum(root.right,sum-root.val);	
 public class Solution {
@@ -20,9 +20,5 @@ public class Solution {
 			rst++;
 		rst += presentSum(root.left,sum-root.val)+presentSum(root.right,sum-root.val);					
 		return rst;
-	}
-
-	public static void main(String[] args){
-		
 	}
 }
